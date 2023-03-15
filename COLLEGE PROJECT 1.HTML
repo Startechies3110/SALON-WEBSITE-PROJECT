@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER DETAILS</title>
+    <style>
+        body{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDCIQhBFvy39pOxgX4jG7BgFisglGbFlr6Hw&usqp=CAU);
+        }
+        fieldset
+        {
+            background-image: url(https://images.unsplash.com/photo-1562575214-da9fcf59b907?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaG5vbG9neSUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80);
+            margin-top: 60px;
+            position: relative;
+        }
+        fieldset:hover{
+           background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStSAnAoQKeBRFCiazQlfOdb6P4ETouFfUTig&usqp=CAU);
+            transition: width,2s;
+
+        }
+        h1.ease-out
+        {
+            height: 100px;
+        width: 600px;
+        background-color: rgb(62, 65, 226);
+        position: relative;
+        animation-name: colorchange;
+        animation-duration: 10s;
+        animation-iteration-count:infinite;
+        text-align: center;
+        padding-top: 60px;
+        font-size: 50px;
+        
+        
+        }
+        
+      h1.ease{
+        height: 100px;
+        width: 600px;
+        background-color: rgb(62, 65, 226);
+        position: relative;
+        animation-name: colorchange;
+        animation-duration: 10s;
+        animation-iteration-count:infinite;
+        text-align: center;
+        padding-top: 60px;
+        font-size: 50px;
+        
+      } .ease-out{
+            animation-timing-function: ease-out;
+        }
+        .ease{
+            animation-timing-function: ease;
+        }
+        @keyframes colorchange
+       {
+         from{
+            background-color: red;
+            top: 0px;
+            left: 0px;
+        }
+        to{
+            background-color: rgb(33, 255, 33);
+            top: 0px;
+            left: 200px;
+        }  
+        /* if we want that animation should change at particular time */
+         0%{
+            background-color: red;
+            top: 0px;
+            left: 0px;
+            color: black;
+        }
+         25%{
+            background-color: rgb(37, 33, 255);
+            top: 65px;
+            left: 200px;
+            color: yellow;
+        } 
+        50%
+        {
+            background-color: rgb(255, 33, 225);
+            top: 65px;
+            left: 700px;
+            color: rgb(108, 108, 255);
+        }
+         75%
+        {
+            background-color: rgb(230, 255, 8);
+            top: 5px;
+            left: 700px;
+            color: crimson;
+        } 
+        100%
+        {
+            background-color: orange;
+            top: 0px;
+            left: 0px;
+            color: maroon;
+        } 
+        
+      }
+      fieldset
+      {
+        color: yellow;
+      }
+    </style>
+</head>
+
+<body>
+    
+    <h1 class="ease-out">MNNIT</h1>
+    <h1 class="ease">BARBER SHOP</h1>
+    
+    <fieldset class="user">
+        
+        <legend class="detail">USER DETAILS</legend>
+      
+        <form method="post">
+             <label for="name">ENTER YOUR NAME</label>
+            <input type="text" name="none" id="name">
+          <label for="num">MOBILE NUMBER:</label>
+          <input type="number" name="" id="num" placeholder="xxxxxxxxxx"min="0"><br><br>
+          <label for="REG">REGISTRATION NUMBER:</label>
+          <input type="number" name="" id="REG"min="0"placeholder="xxxxxxxx"><BR></BR>
+        <input type="submit" value="submit" target="_blank">
+          
+            
+         </form>
+    </fieldset>
+</body>
+</html>
